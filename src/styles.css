@@ -1,0 +1,131 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Avatar styles */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Info section styles */
+.info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+p {
+  color: #7f8c8d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Skills section styles */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill {
+  font-size: 0.9rem;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.skill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill span {
+  margin-right: 5px;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin: 0 30px 0 0;
+  }
+
+  .info {
+    text-align: left;
+    flex: 1;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+  }
+
+  .skills {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    padding: 40px;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .skill {
+    font-size: 1rem;
+  }
+}
